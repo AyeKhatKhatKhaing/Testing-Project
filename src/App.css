@@ -1,0 +1,397 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+nav{
+  transition: .5s;
+}
+nav ul li:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+.navbar ul li:hover{
+  cursor: pointer;
+}
+
+.btn-contact {
+  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn-contact:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg {
+filter: brightness(120%);
+}
+
+.des{
+  background-image: linear-gradient(to top, #000000 0%, #1f1f1f 50%, #454545 100%);
+  box-shadow: 0 -30px 50px 40px  #454545;
+  opacity: 0.8;
+}
+.register{
+  transition: .5s;
+  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+}
+.register:hover{
+  cursor: pointer;
+  transform: translateX(-50px);
+}
+.about{
+  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  background-clip: text;
+  color: transparent;
+}
+.seemore{
+  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+.seemore:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+#curve{
+  margin:0 auto;
+  position:relative;
+  width:150px;
+  height:10px;
+}
+
+#curve:after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:50px;
+  border-top:5px solid #00CDAC;
+  border-radius:50%;
+  left:100%;
+  top:10%;
+}
+#curve:before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:50px;
+  border-bottom:5px solid #00CDAC;
+  border-radius:50%;
+  left:.1%;
+}
+.about-container{
+  position: relative;
+}
+.course-container{
+  position: relative;
+}
+.about-container .box1{
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(to top, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  border-radius: 10px;
+  transform: rotate(50deg);
+  box-shadow: 0 0 50px  #00CDAC;
+}
+
+.about-container .box2{
+  position: absolute;
+  top: 350px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  background-image: linear-gradient(to top, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  border-radius: 10px;
+  transform: rotate(50deg);
+  box-shadow: 0 0 30px #69f3dd;
+}
+.about-container .box3{
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(to top, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  border-radius: 10px;
+  transform: rotate(50deg);
+  box-shadow: 0 0 50px #69f3dd;
+}
+.about-container .box4{
+   position: absolute;
+   top: 250px;
+   right: 50px;
+   height: 50px;
+   width: 50px;
+   background-image: linear-gradient(to top, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+   border-radius: 10px;
+   transform: rotate(50deg);
+   box-shadow: 0 0 30px #69f3dd;
+ }
+.course{
+  background-image: linear-gradient(to top, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+}
+
+.course-container .box1{
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  height: 50px;
+  width: 50px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 80px 20px  white;
+}
+
+.course-container .box2{
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  height: 35px;
+  width: 35px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 50px 10px white;
+}
+.classes{
+  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.class{
+  border: 1px solid #00CDAC;
+  border-radius:  999em  999em ;
+}
+
+.register img{
+  border-radius:  999em 40px  40px 999em ;
+}
+.photo{
+  border-radius:  999em 40px  40px 999em ;
+}
+
+.iclass-container{
+  position: relative;
+}
+.iclass-container .box1{
+  position: absolute;
+  bottom: 100px;
+  left: 80px;
+  height: 80px;
+  width: 80px;
+  background-image: linear-gradient(to top, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  border-radius: 10px;
+  transform: rotate(50deg);
+  box-shadow: 0 0 50px  #00CDAC;
+}
+
+.iclass-container .box2{
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+  height: 50px;
+  width: 50px;
+  background-image: linear-gradient(to top, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+  border-radius: 10px;
+  transform: rotate(50deg);
+  box-shadow: 0 0 30px #69f3dd;
+}
+
+.campus-container{
+  position: relative;
+}
+
+.campus-container .box1{
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+  height: 50px;
+  width: 50px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 80px 20px  white;
+}
+
+.campus-container .box2{
+  position: absolute;
+  bottom: 20px;
+  left: 140px;
+  height: 35px;
+  width: 35px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 50px 10px white;
+}
+.campus-container .box3{
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 50px 10px white;
+}
+.campus-container .box4{
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  height: 35px;
+  width: 35px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 50px 10px white;
+}
+.contact-container{
+  position: relative;
+}
+.contact-container .box1{
+  position: absolute;
+  top: 300px;
+  left: 80px;
+  height: 50px;
+  width: 50px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 50px 20px white;
+}
+.contact-container .box2{
+   position: absolute;
+   top: 250px;
+   left: 130px;
+   height: 35px;
+   width: 35px;
+   background:white;
+   border-radius: 5px;
+   transform: rotate(80deg);
+   box-shadow: 0 0 50px 10px white;
+ }
+.contact-container .box3{
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 50px 20px white;
+}
+.contact-container .box4{
+  position: absolute;
+  bottom: 90px;
+  right: 90px;
+  height: 35px;
+  width: 35px;
+  background:white;
+  border-radius: 5px;
+  transform: rotate(80deg);
+  box-shadow: 0 0 50px 15px white;
+}
+.navbar{
+  transition: .5s;
+}
+.btmsm{
+  width: 200px !important;
+}
+ul{
+  list-style: none;
+}
+@media screen and (max-width: 380px) {
+    .class{
+      border-radius: 0;
+    }
+  .photo{
+    width: 100% !important;
+    height: 200px !important;
+    border-radius: 0;
+  }
+  .class .seemore{
+    margin-bottom: -25px;
+    margin-left: 40%;
+  }
+  .bsm{
+    margin-bottom: -35px;
+    margin-left: 50px;
+  }
+  .cont{
+    height: 600px !important;
+  }
+  .home{
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .home{
+    overflow-x: hidden;
+  }
+  .photo{
+    height: 220px !important;
+  }
+}
+
+
+
+
